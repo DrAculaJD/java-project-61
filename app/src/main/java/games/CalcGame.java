@@ -1,8 +1,6 @@
 package games;
 
 import hexlet.code.Cli;
-
-import java.util.Random;
 import java.util.Scanner;
 
 public class CalcGame {
@@ -45,5 +43,7 @@ public class CalcGame {
 
             count++;
         }
+
+        System.out.println("Congratulations, " + Cli.getName() + "!");
     }
 }
