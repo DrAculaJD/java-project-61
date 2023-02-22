@@ -24,11 +24,12 @@ public class EvenGame {
                 currentAnswer = "no";
             }
 
-            if(answerNext.equals(currentAnswer)) {
+            if (answerNext.equals(currentAnswer)) {
                 System.out.println("Correct!");
                 count++;
             } else {
-                System.out.println(answerNext + " is wrong answer ;(. Correct answer was " + currentAnswer + ".\nLet's try again, " + Cli.getName() + "!");
+                System.out.println(answerNext + " is wrong answer ;(. Correct answer was " + currentAnswer
+                        + ".\nLet's try again, " + Cli.getName() + "!");
             }
 
             currentAnswer = "yes";
