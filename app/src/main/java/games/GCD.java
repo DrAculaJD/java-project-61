@@ -1,13 +1,14 @@
 package games;
 
 import hexlet.code.Cli;
+
 import java.util.Scanner;
 
-public class CalcGame {
+public class GCD {
 
     public static void game() {
         Cli.greetings();
-        System.out.println("What is the result of the expression?");
+        System.out.println("Find the greatest common divisor of given numbers.");
 
         int count = 0;
 
@@ -15,21 +16,9 @@ public class CalcGame {
             Scanner answer = new Scanner(System.in);
             int number1 = (int) (Math.random() * 100);
             int number2 = (int) (Math.random() * 100);
-            int actionChoice = (int) (Math.random() * 3.1);
-            int result = 0;
-            String action = " + ";
+            int result = gcd(number1, number2);
 
-            if (actionChoice == 0) {
-                action = " - ";
-                result = number1 - number2;
-            } else if (actionChoice == 1) {
-                action = " * ";
-                result = number1 * number2;
-            } else {
-                result = number1 + number2;
-            }
-
-            System.out.println("Question: " + number1 + action + number2);
+            System.out.println("Question: " + number1 + " " + number2);
             int answerNext = answer.nextInt();
             System.out.println("Your answer: " + answerNext);
 
@@ -45,5 +34,9 @@ public class CalcGame {
         }
 
         if (count == 3) System.out.println("Congratulations, " + Cli.getName() + "!");
+    }
+
+    public static int gcd(int a, int b) {
+        return (a % b == 0) ? Math.abs(b) : gcd(b, a % b);
     }
 }

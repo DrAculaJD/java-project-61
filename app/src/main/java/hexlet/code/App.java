@@ -2,6 +2,8 @@ package hexlet.code;
 
 import games.CalcGame;
 import games.EvenGame;
+import games.GCD;
+
 import java.util.Scanner;
 
 public class App {
@@ -11,22 +13,18 @@ public class App {
                 + "1 - Greet\n"
                 + "2 - Even\n"
                 + "3 - Calc\n"
+                + "4 - GCD\n"
                 + "0 - Exit");
 
         Scanner answer = new Scanner(System.in);
 
         switch (answer.next()) {
-            case "1":
-                Cli.greetings();
-                break;
-            case "2":
-                EvenGame.game();
-                break;
-            case "3":
-                CalcGame.game();
-                break;
-            default:
-                break;
+            case "1" -> Cli.greetings();
+            case "2" -> EvenGame.game();
+            case "3" -> CalcGame.game();
+            case "4" -> GCD.game();
+            default -> {
+            }
         }
     }
 }

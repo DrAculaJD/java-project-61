@@ -36,5 +36,7 @@ public class EvenGame {
             count++;
             currentAnswer = "yes";
         }
+
+        if (count == 3) System.out.println("Congratulations, " + Cli.getName() + "!");
     }
 }
