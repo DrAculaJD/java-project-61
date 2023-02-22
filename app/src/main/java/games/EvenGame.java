@@ -1,10 +1,11 @@
-package hexlet.code;
+package games;
 
+import hexlet.code.Cli;
 import java.util.Scanner;
 
 public class EvenGame {
 
-    public static void even() {
+    public static void game() {
         Cli.greetings();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
@@ -26,12 +27,13 @@ public class EvenGame {
 
             if (answerNext.equals(currentAnswer)) {
                 System.out.println("Correct!");
-                count++;
             } else {
                 System.out.println(answerNext + " is wrong answer ;(. Correct answer was " + currentAnswer
                         + ".\nLet's try again, " + Cli.getName() + "!");
+                break;
             }
 
+            count++;
             currentAnswer = "yes";
         }
     }
