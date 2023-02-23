@@ -1,9 +1,6 @@
 package hexlet.code;
 
-import games.Calc;
-import games.Even;
-import games.GCD;
-import games.Progression;
+import games.*;
 
 import java.util.Scanner;
 
@@ -16,6 +13,7 @@ public class App {
                 + "3 - Calc\n"
                 + "4 - GCD\n"
                 + "5 - Progression\n"
+                + "6 - Prime\n"
                 + "0 - Exit");
 
         Scanner answer = new Scanner(System.in);
@@ -26,6 +24,7 @@ public class App {
             case "3" -> Calc.game();
             case "4" -> GCD.game();
             case "5" -> Progression.game();
+            case "6" -> Prime.game();
             default -> {
             }
         }
