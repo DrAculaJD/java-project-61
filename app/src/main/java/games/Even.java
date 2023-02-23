@@ -17,8 +17,8 @@ public class Even {
             Scanner answer = new Scanner(System.in);
             int maxNumber = 10;
             int number = (int) (Math.random() * maxNumber);
-            int DenimForCheckNumber = 2;
-            boolean checkAnswer = number % DenimForCheckNumber == 0;
+            int denomForCheckNumber = 2;
+            boolean checkAnswer = number % denomForCheckNumber == 0;
 
             System.out.println("Question: " + number);
             String answerNext = answer.next();
