@@ -3,7 +3,7 @@ package games;
 import hexlet.code.Cli;
 import java.util.Scanner;
 
-public class CalcGame {
+public class Calc {
 
     public static void game() {
         Cli.greetings();
@@ -44,6 +44,8 @@ public class CalcGame {
             count++;
         }
 
-        if (count == 3) System.out.println("Congratulations, " + Cli.getName() + "!");
+        if (count == 3) {
+            System.out.println("Congratulations, " + Cli.getName() + "!");
+        }
     }
 }

@@ -1,7 +1,7 @@
 package hexlet.code;
 
-import games.CalcGame;
-import games.EvenGame;
+import games.Calc;
+import games.Even;
 import games.GCD;
 
 import java.util.Scanner;
@@ -20,8 +20,8 @@ public class App {
 
         switch (answer.next()) {
             case "1" -> Cli.greetings();
-            case "2" -> EvenGame.game();
-            case "3" -> CalcGame.game();
+            case "2" -> Even.game();
+            case "3" -> Calc.game();
             case "4" -> GCD.game();
             default -> {
             }

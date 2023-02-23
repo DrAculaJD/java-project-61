@@ -33,7 +33,9 @@ public class GCD {
             count++;
         }
 
-        if (count == 3) System.out.println("Congratulations, " + Cli.getName() + "!");
+        if (count == 3) {
+            System.out.println("Congratulations, " + Cli.getName() + "!");
+        }
     }
 
     public static int gcd(int a, int b) {
