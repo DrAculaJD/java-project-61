@@ -7,3 +7,4 @@
 Аскинема Calc: https://asciinema.org/a/561771
 Аскинема GCD: https://asciinema.org/a/561796
 Аскинема Progression: https://asciinema.org/a/562260
+Аскинема Prime: https://asciinema.org/a/562309
