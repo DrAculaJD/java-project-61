@@ -10,12 +10,15 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int count = 0;
+        int maxCount = 3;
         String currentAnswer = "yes";
 
-        while (count < 3) {
+        while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int number = (int) (Math.random() * 10);
-            boolean checkAnswer = number % 2 == 0;
+            int maxNumber = 10;
+            int number = (int) (Math.random() * maxNumber);
+            int DenimForCheckNumber = 2;
+            boolean checkAnswer = number % DenimForCheckNumber == 0;
 
             System.out.println("Question: " + number);
             String answerNext = answer.next();
@@ -37,7 +40,7 @@ public class Even {
             currentAnswer = "yes";
         }
 
-        if (count == 3) {
+        if (count == maxCount) {
             System.out.println("Congratulations, " + Cli.getName() + "!");
         }
     }

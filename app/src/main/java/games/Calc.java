@@ -10,12 +10,15 @@ public class Calc {
         System.out.println("What is the result of the expression?");
 
         int count = 0;
+        int maxCount = 3;
 
-        while (count < 3) {
+        while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int number1 = (int) (Math.random() * 100);
-            int number2 = (int) (Math.random() * 100);
-            int actionChoice = (int) (Math.random() * 3.1);
+            int maxNumber = 100;
+            int number1 = (int) (Math.random() * maxNumber);
+            int number2 = (int) (Math.random() * maxNumber);
+            int maxAmountActions = 3;
+            int actionChoice = (int) (Math.random() * maxAmountActions);
             int result = 0;
             String action = " + ";
 
@@ -44,7 +47,7 @@ public class Calc {
             count++;
         }
 
-        if (count == 3) {
+        if (count == maxCount) {
             System.out.println("Congratulations, " + Cli.getName() + "!");
         }
     }
