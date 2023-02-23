@@ -26,7 +26,7 @@ public class Prime {
             String answerNext = answer.next();
             System.out.println("Your answer: " + answerNext);
 
-            if (!(checkAnswer)) {
+            if (!(checkAnswer) || question.equals("1")) {
                 currentAnswer = "no";
             }
 
