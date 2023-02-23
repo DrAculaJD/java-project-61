@@ -6,3 +6,4 @@
 Аскинема Even: https://asciinema.org/a/561679
 Аскинема Calc: https://asciinema.org/a/561771
 Аскинема GCD: https://asciinema.org/a/561796
+Аскинема Progression: https://asciinema.org/a/562260
