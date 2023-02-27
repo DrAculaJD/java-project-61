@@ -13,7 +13,7 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         int count = 0;
-        int maxCount = 3;
+        final int maxCount = 3;
         String currentAnswer = "yes";
 
         while (count < maxCount) {
@@ -23,7 +23,7 @@ public class Prime {
                     "73", "79", "83", "89", "97", "101", "103", "107", "109", "113", "127", "131", "137",
                     "139", "149", "151", "157", "163", "167", "173", "179", "181", "191", "193", "197", "199"));
 
-            int maxNumber = 199;
+            final int maxNumber = 199;
             String question = (int) (Math.random() * maxNumber) + "";
             boolean checkAnswer = primeNumbers.contains(question);
 

@@ -10,13 +10,13 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
 
         int count = 0;
-        int maxCount = 3;
+        final int maxCount = 3;
 
         while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int lengthArray = 10; // это же число есть максимально возможное дельта для прогрессии
+            final int lengthArray = 10; // это же число есть максимально возможное дельта для прогрессии
             String[] progression = new String[lengthArray];
-            int maxNumberInProgression = 100;
+            final int maxNumberInProgression = 100;
             progression[0] = (int) (Math.random() * maxNumberInProgression) + "";
 
             int delta = (int) (Math.random() * lengthArray); // элемент с таким же индексом буду ислючать из прогрессии

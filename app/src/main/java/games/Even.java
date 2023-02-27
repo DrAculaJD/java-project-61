@@ -10,12 +10,12 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int count = 0;
-        int maxCount = 3;
+        final int maxCount = 3;
         String currentAnswer = "yes";
 
         while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int maxNumber = 10;
+            final int maxNumber = 10;
             int number = (int) (Math.random() * maxNumber);
             int denomForCheckNumber = 2;
             boolean checkAnswer = number % denomForCheckNumber == 0;

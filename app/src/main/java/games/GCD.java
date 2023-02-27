@@ -11,11 +11,11 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
 
         int count = 0;
-        int maxCount = 3;
+        final int maxCount = 3;
 
         while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int maxNumber = 100;
+            final int maxNumber = 100;
             int forExcludeZero = 1;
             int number1 = (int) ((Math.random() * maxNumber) + forExcludeZero);
             int number2 = (int) ((Math.random() * maxNumber) + forExcludeZero);

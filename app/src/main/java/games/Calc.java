@@ -10,14 +10,14 @@ public class Calc {
         System.out.println("What is the result of the expression?");
 
         int count = 0;
-        int maxCount = 3;
+        final int maxCount = 3;
 
         while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            int maxNumber = 100;
+            final int maxNumber = 100;
             int number1 = (int) (Math.random() * maxNumber);
             int number2 = (int) (Math.random() * maxNumber);
-            int maxAmountActions = 3;
+            final int maxAmountActions = 3;
             int actionChoice = (int) (Math.random() * maxAmountActions);
             int result = 0;
             String action = " + ";
