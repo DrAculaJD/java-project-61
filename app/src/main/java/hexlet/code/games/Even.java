@@ -1,6 +1,8 @@
-package games;
+package hexlet.code.games;
 
 import hexlet.code.Cli;
+import hexlet.code.Engine;
+
 import java.util.Scanner;
 
 public class Even {
@@ -15,24 +17,17 @@ public class Even {
 
         while (count < maxCount) {
             Scanner answer = new Scanner(System.in);
-            final int maxNumber = 10;
-            int number = (int) (Math.random() * maxNumber);
-            int denomForCheckNumber = 2;
-            boolean checkAnswer = number % denomForCheckNumber == 0;
+            final int number = (int) (Math.random() * 10);
+            final boolean checkAnswer = number % 2 == 0;
 
             System.out.println("Question: " + number);
             String answerNext = answer.next();
-            System.out.println("Your answer: " + answerNext);
 
             if (!(checkAnswer)) {
                 currentAnswer = "no";
             }
 
-            if (answerNext.equals(currentAnswer)) {
-                System.out.println("Correct!");
-            } else {
-                System.out.println(answerNext + " is wrong answer ;(. Correct answer was " + currentAnswer
-                        + ".\nLet's try again, " + Cli.getName() + "!");
+            if (Engine.correctOrNot(answerNext.equals(currentAnswer), currentAnswer, answerNext)) {
                 break;
             }
 
@@ -40,8 +35,6 @@ public class Even {
             currentAnswer = "yes";
         }
 
-        if (count == maxCount) {
-            System.out.println("Congratulations, " + Cli.getName() + "!");
-        }
+        Engine.congratulations(count == maxCount);
     }
 }
